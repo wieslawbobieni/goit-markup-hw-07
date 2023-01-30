@@ -44,9 +44,6 @@ ul {
 .header-border {
   border-bottom: 1px solid var(--border-bottom);
 }
-.section {
-  padding: 94px 0;
-}
 
 .container {
   max-width: 1200px;
@@ -65,6 +62,7 @@ ul {
 
 .about-us {
   padding-top: 0;
+  margin-bottom: 94px;
 }
 .team {
   padding: 94px 0;
@@ -95,8 +93,6 @@ ul {
 
 /* Logo */
 .logo {
-  font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -330,7 +326,9 @@ ul {
   margin-bottom: 30px;
   justify-content: center;
 }
-
+.team__contact-link {
+  outline: none;
+}
 .team__contact-link:hover *,
 .team__contact-link:focus * {
   background-color: var(--hover-color);
@@ -364,16 +362,20 @@ ul {
   align-items: center;
 }
 
-.clients__icon {
+.clients__box--icon {
   fill: #afb1b8;
 }
 
+.clients__link {
+  outline: none;
+}
 .clients__link:hover *,
 .clients__link:focus * {
   border-color: var(--hover-color);
   fill: var(--hover-color);
   transition: var(--transition-main);
 }
+
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -421,7 +423,7 @@ ul {
   align-self: center;
 }
 
-.newsletter__button {
+.newsletter-form__button {
   display: flex;
   align-items: center;
   padding: 10px 24px 10px 42px;
@@ -465,13 +467,15 @@ ul {
   flex-basis: calc((100% - 2 * 30px) / 3);
   max-width: 370px;
   border-bottom: 1px solid #eeeeee;
+  outline: none;
 }
-.portfolio__item:hover {
+
+.portfolio__item:is(:hover, :focus) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: var(--transition-main);
+  cursor: pointer;
 }
-
 .portfolio__box {
   position: relative;
   overflow: hidden;
@@ -479,8 +483,9 @@ ul {
   height: 294px;
 }
 
-.portfolio__box:hover .portfolio__overlight {
+.portfolio__item:is(:hover, :focus) .portfolio__overlight {
   transform: translateY(0);
+  cursor: pointer;
 }
 .portfolio__overlight {
   position: absolute;
@@ -519,13 +524,12 @@ ul {
   justify-content: left;
 }
 
-.join-to-us__item {
-  box-shadow: none;
-}
 .join-to-us__item:not(:last-child) {
   margin-right: 10px;
 }
-
+.join-to-us__link {
+  outline: none;
+}
 .join-to-us__link:hover *,
 .join-to-us__link:focus * {
   background-color: var(--hover-color);
@@ -542,7 +546,7 @@ ul {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.join-to-us__icon-sm {
+.join-to-us__icon-background--icon-sm {
   fill: var(--highlight);
 }
 
@@ -570,6 +574,7 @@ ul {
   margin-top: 20px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .newsletter-form__input-email:hover,
@@ -579,7 +584,7 @@ ul {
   transition: var(--transition-main);
 }
 
-.button__send-icon {
+.newsletter-form__button--send-icon {
   fill: var(--highlight);
   margin: 24px auto;
 }

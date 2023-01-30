@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>HTML i CSS - Siódme zadanie domowe</title>
   </head>
   <body>
@@ -163,7 +163,7 @@
         <div class="container">
           <h2 class="about-us__header">Czym się zajmujemy</h2>
           <ul class="about-us__list">
-            <li class="about-us__item">
+            <li>
               <figure class="about-us__field">
                 <div class="about-us__thumb">
                   <img
@@ -178,7 +178,7 @@
                 </div>
               </figure>
             </li>
-            <li class="about-us__item">
+            <li>
               <figure class="about-us__field">
               <div class="about-us__thumb">
               <img
@@ -192,7 +192,7 @@
                   </figcaption>
                 </div>
             </li>
-            <li class="about-us__item">
+            <li>
               <figure class="about-us__field">
               <div class="about-us__thumb">
               <img
@@ -224,7 +224,7 @@
                 />
                 <figcaption>
                   <h4 class="team__name">John Doe</h4>
-                  <p class=team__speciality">Product Designer</p>
+                  <p class="team__speciality">Product Designer</p>
                 </figcaption>
               </figure>
               <ul class="team__contact-list">
@@ -417,7 +417,7 @@
             <li class="clients__item">
               <a class="clients__link" href=""
                 ><div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo1"></use>
                   </svg></div
               ></a>
@@ -425,15 +425,15 @@
             <li class="clients__item">
               <a class="clients__link" href="">
                 <div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo2"></use>
                   </svg></div
               ></a>
             </li>
-            <li class="clients__item">
-              <a class=-clients__link" href="">
+    <li class="clients__item">
+              <a class="clients__link" href="">
                 <div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo3"></use>
                   </svg></div
               ></a>
@@ -441,7 +441,7 @@
             <li class="clients__item">
               <a class="clients__link" href="">
                 <div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo4"></use>
                   </svg></div
               ></a>
@@ -449,7 +449,7 @@
             <li class="clients__item">
               <a class="clients__link" href="">
                 <div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo5"></use>
                   </svg></div
               ></a>
@@ -457,7 +457,7 @@
             <li class="clients__item">
               <a class="clients__link" href="">
                 <div class="clients__box">
-                  <svg class="clients__icon" width="106" height="64">
+                  <svg class="clients__box--icon" width="106" height="64">
                     <use href="./images/icons.svg#icon-logo6"></use>
                   </svg></div
               ></a>
@@ -496,7 +496,7 @@
             <li class="join-to-us__item">
               <a class="join-to-us__link" href="instagram">
                 <div class="join-to-us__icon-background">
-                  <svg class="join-to-us__icon-sm" width="20" height="20">
+                  <svg class="join-to-us__icon-background--icon-sm" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></div
               ></a>
@@ -504,7 +504,7 @@
             <li class="join-to-us__item">
               <a class="join-to-us__link" href="twitter">
                 <div class="join-to-us__icon-background">
-                  <svg class="join-to-us__icon-sm" width="20" height="20">
+                  <svg class="join-to-us__icon-background--icon-sm" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></div
               ></a>
@@ -512,7 +512,7 @@
             <li class="join-to-us__item">
               <a class="join-to-us__link" href="facebook">
                 <div class="join-to-us__icon-background">
-                  <svg class="join-to-us__icon-sm" width="20" height="20">
+                  <svg class="join-to-us__icon-background--icon-sm" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></div
               ></a>
@@ -520,7 +520,7 @@
             <li class="join-to-us__item">
               <a class="join-to-us__link" href="linkedin">
                 <div class="join-to-us__icon-background">
-                  <svg class="join-to-us__icon-sm" width="20" height="20">
+                  <svg class="join-to-us__icon-background--icon-sm" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg></div
               ></a>
@@ -534,7 +534,7 @@
 <label>
   <input type="email" name="e-mail" placeholder="E-mail" class="newsletter-form__input-email">
 </label>
-<button type="submit" class="button newsletter__button">Zapisz się<svg class="button__send-icon" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
+<button type="submit" class="button newsletter-form__button">Zapisz się<svg class="newsletter-form__button--send-icon" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
           </form>
         </div>
       </section>
